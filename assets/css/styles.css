@@ -1,0 +1,34 @@
+body {
+    background-image: url("http://7428.net/wp-content/uploads/2015/01/Overlapping-Geometric-Background-Design-Vector.jpg");
+    font-family:  'Hammersmith One', sans-serif;
+}
+
+form {
+	background-color: #ffd27f;
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#startbtn{
+	text-align: center;
+	
+}
+
+
+
+.jumbotron {
+	background-color: #ccccff;
+	color: black; 
+
+}
+
+.q{
+	border-bottom: thick solid;
+	padding: 20px;
+}
