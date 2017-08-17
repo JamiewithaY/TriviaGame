@@ -1,26 +1,16 @@
-//id="countdown" needs to be updated with the new count
-//question 1= True! Gross-Zilla, am I right?
-//question 2= False! Holy No, that's ridiculous.
-//question 3= "True! You better believe it."
-//question 4= "False! This is 100% false and too scary to even think about."
-//question 5= "True! Oreos were introduced in 1912. Chocolate Chip Cookies were invented circa 1938."
-//question6= False! It was the 14th dummy.
-//question7= "False! Only 1/2 of the earthworm can regenerate."
-//question8= "True! You bet your booty."
-//question9= "True! Ahoy ladies." 
-//question10= True! Yuck.
 
 
 $(document).ready(function(){
  
 
-$(".btn").click(function(){
+$(".btn1").click(function(){
 
 var timeLeft = 120;
 var timerId = setInterval(countdown, 1000);
 
+
 		function countdown() {
- 	 if (timeLeft == -1) {
+ 	 if (timeLeft == -1 ) {
     	clearInterval(timerId);
     	alert("Time is up!");
     	alert("Final Score Says...Total Correct: " + correct + " Total Incorrect: " + incorrect);
@@ -30,9 +20,17 @@ var timerId = setInterval(countdown, 1000);
     	timeLeft--;    	
   }
   }
-
+  $(".btn2").click(function(){
+	clearInterval(timerId);
+	timeLeft = 0;
+	$(".btn1").html("0");
+	alert("Final Score Says...Total Correct: " + correct + " Total Incorrect: " + incorrect);
+	
+});
 
 });
+
+
 	
 //scoreboard variable
 	correct = 0;
@@ -52,8 +50,6 @@ var timerId = setInterval(countdown, 1000);
     $(".radio-inline1").click(function(){
     	$("#question1").hide(2000);
 
-    	alert("Score board says..." + correct +"  correct and " + incorrect + "  incorrect.");
-
     });   
 
 //Question2
@@ -69,8 +65,6 @@ var timerId = setInterval(countdown, 1000);
 
     $(".radio-inline2").click(function(){
     	$("#question2").hide(2000);
-
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
 
     });   
 
@@ -88,8 +82,6 @@ var timerId = setInterval(countdown, 1000);
     $(".radio-inline3").click(function(){
     	$("#question3").hide(2000);
 
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
-
     });   
 
 //Question4
@@ -106,8 +98,6 @@ var timerId = setInterval(countdown, 1000);
     $(".radio-inline4").click(function(){
     	$("#question4").hide(2000);
 
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
-
     });   
 
 //Question5
@@ -123,9 +113,6 @@ var timerId = setInterval(countdown, 1000);
 
     $(".radio-inline5").click(function(){
     	$("#question5").hide(2000);
-
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
-
     });   
 
 //Question6
@@ -142,8 +129,6 @@ var timerId = setInterval(countdown, 1000);
     $(".radio-inline6").click(function(){
     	$("#question6").hide(2000);
 
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
-
     });   
 
 //Question7
@@ -158,8 +143,6 @@ $("#true7").click(function(){
 
     $(".radio-inline7").click(function(){
     	$("#question7").hide(2000);
-
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
 
     }); 
 
@@ -176,8 +159,6 @@ $("#true8").click(function(){
     $(".radio-inline8").click(function(){
     	$("#question8").hide(2000);
 
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
-
     });   
 
 //Question9
@@ -193,8 +174,6 @@ $("#true9").click(function(){
     $(".radio-inline9").click(function(){
     	$("#question9").hide(2000);
 
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
-
     });   
 
 //Question10
@@ -209,8 +188,6 @@ $("#true10").click(function(){
 
     $(".radio-inline10").click(function(){
     	$("#question10").hide(2000);
-
-    	alert("Score board says..." + correct +"  correct and" + incorrect + " incorrect.");
 
     });   
 
